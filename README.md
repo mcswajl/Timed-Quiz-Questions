@@ -14,7 +14,7 @@ Screenshot
 
 The URL of the deployed application is https://mcswajl.github.io/Timed-Quiz-Questions/
 
-The URL of the GitHub repository is https://github.com/mcswajl/mcswajl-Gen-Random-Password
+The URL of the GitHub repository is https://github.com/mcswajl/Timed-Quiz-Questions
 
 ## This is the acceptance Criteria that I was provided prior to building this website.
 
