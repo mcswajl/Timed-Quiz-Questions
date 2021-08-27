@@ -10,7 +10,7 @@ having a hard time remembering the correct functions, variables, arrays, etc. to
 
 
 Screenshot of my website
-Screenshot ./assets/images/screenshot.jpg
+![Screenshot](./assets/images/screenshot.jpg)
 
 The URL of the deployed application is https://mcswajl.github.io/Timed-Quiz-Questions/
 
