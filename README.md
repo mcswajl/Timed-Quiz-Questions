@@ -6,7 +6,7 @@ Take a look at my website https://mcswajl.github.io/Timed-Quiz-Questions/
 
 Website Story
 Again, this challenge was difficult for me because JavaScript is new to me and I am 
-having a hard time remembering the correct functions, variables, arrays, etc. to use. (I said this in last weeks challenge, I'm struggling). 
+having a hard time remembering the correct functions, variables, arrays, etc. to use. (I said this in last weeks challenge). 
 
 
 Screenshot of my website
