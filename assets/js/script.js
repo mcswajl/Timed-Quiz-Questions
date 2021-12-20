@@ -3,7 +3,7 @@ var quizBody = document.getElementById("quiz");
 var resultsEl = document.getElementById("result");
 var finalScoreEl = document.getElementById("finalScore");
 var gameoverDiv = document.getElementById("gameover");
-var questionsEl = document.getElementById("questions");
+var questionsEl = document.getElementById("quizQuestions");
 var quizTimer = document.getElementById("timer");
 var startQuizButton = document.getElementById("startbtn");
 var startQuizDiv = document.getElementById("startpage");
@@ -53,10 +53,10 @@ var quizQuestions = [{
     ];
 
 // Buttons
-var buttonA = document.getElementById("A");
-var buttonB = document.getElementById("B");
-var buttonC = document.getElementById("C");
-var buttonD = document.getElementById("D");
+var buttonA = document.getElementById("a");
+var buttonB = document.getElementById("b");
+var buttonC = document.getElementById("c");
+var buttonD = document.getElementById("d");
 
 
 
@@ -70,7 +70,7 @@ var correct;
 
 
 // Function goes through the object array to generate the questions and answers.
-function generateQuizQuestions(){
+function generateQuizQuestion(){
     gameoverDiv.style.display = "none";
     if (currentQuestionIndex === finalQuestionIndex){
         return showScore();
@@ -87,7 +87,7 @@ function generateQuizQuestions(){
 function startQuiz(){
     gameoverDiv.style.display = "none";
     startQuizDiv.style.display = "none";
-    generateQuizQuestions();
+    generateQuizQuestion();
 
     //Timer
     timerInterval = setInterval(function() {
