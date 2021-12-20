@@ -76,11 +76,11 @@ function generateQuizQuestion(){
         return showScore();
     } 
     var currentQuestion = quizQuestions[currentQuestionIndex];
-    questionsEl.innerHTML = "<p>" + currentQuestion.question + "</p>";
-    buttonA.innerHTML = currentQuestion.choice1;
-    buttonB.innerHTML = currentQuestion.choice2;
-    buttonC.innerHTML = currentQuestion.choice3;
-    buttonD.innerHTML = currentQuestion.choice4;
+    questionsEl.innerHTML = "<p>" + currentQuestion.title + "</p>";
+    buttonA.innerHTML = currentQuestion.choices[0];
+    buttonB.innerHTML = currentQuestion.choices[1];
+    buttonC.innerHTML = currentQuestion.choices[2];
+    buttonD.innerHTML = currentQuestion.choices[3];
 };
 
 // Function starts the TimeRanges, hides button then displays the first quiz question.
