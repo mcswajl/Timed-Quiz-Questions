@@ -16,7 +16,11 @@ var submitScoreBtn = document.getElementById("submitScore");
 var highscoreDisplayScore = document.getElementById("highscore-score");
 
 // Buttons
-var answerIndex = document.getElementById(3);
+var buttonA = document.getElementById(1);
+var buttonB = document.getElementById(2);
+var buttonC = document.getElementById(3);
+var buttonD = document.getElementById(4);
+
 
 
 // Other variables
