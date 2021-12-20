@@ -15,22 +15,6 @@ var endGameBtns = document.getElementById("endGameBtns");
 var submitScoreBtn = document.getElementById("submitScore");
 var highscoreDisplayScore = document.getElementById("highscore-score");
 
-// Buttons
-var buttonA = document.getElementById(1);
-var buttonB = document.getElementById(2);
-var buttonC = document.getElementById(3);
-var buttonD = document.getElementById(4);
-
-
-
-// Other variables
-var finalQuestionIndex = quizQuestions.length;
-var currentQuestionIndex = 0;
-var timeLeft = 120;
-var timerInterval;
-var score = 0;
-var correct;
-
 var quizQuestions = [{
     title: "How many counties in NC?",
     choices: [ "47", "67", "100", "39"],
@@ -68,25 +52,42 @@ var quizQuestions = [{
          
     ];
 
+// Buttons
+var buttonA = document.getElementById("A");
+var buttonB = document.getElementById("B");
+var buttonC = document.getElementById("C");
+var buttonD = document.getElementById("D");
+
+
+
+// Other variables
+var finalQuestionIndex = quizQuestions.length;
+var currentQuestionIndex = 0;
+var timeLeft = 120;
+var timerInterval;
+var score = 0;
+var correct;
+
+
 // Function goes through the object array to generate the questions and answers.
-function generateQuizQuestion(){
+function generateQuizQuestions(){
     gameoverDiv.style.display = "none";
     if (currentQuestionIndex === finalQuestionIndex){
         return showScore();
     } 
     var currentQuestion = quizQuestions[currentQuestionIndex];
     questionsEl.innerHTML = "<p>" + currentQuestion.question + "</p>";
-    buttonA.innerHTML = currentQuestion.choiceA;
-    buttonB.innerHTML = currentQuestion.choiceB;
-    buttonC.innerHTML = currentQuestion.choiceC;
-    buttonD.innerHTML = currentQuestion.choiceD;
+    buttonA.innerHTML = currentQuestion.choice1;
+    buttonB.innerHTML = currentQuestion.choice2;
+    buttonC.innerHTML = currentQuestion.choice3;
+    buttonD.innerHTML = currentQuestion.choice4;
 };
 
 // Function starts the TimeRanges, hides button then displays the first quiz question.
 function startQuiz(){
     gameoverDiv.style.display = "none";
     startQuizDiv.style.display = "none";
-    generateQuizQuestion();
+    generateQuizQuestions();
 
     //Timer
     timerInterval = setInterval(function() {
