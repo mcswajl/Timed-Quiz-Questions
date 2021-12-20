@@ -21,58 +21,7 @@ var buttonB = document.getElementById("b");
 var buttonC = document.getElementById("c");
 var buttonD = document.getElementById("d");
 
-// Quiz questions
-var quizQuestions = [{
-    question: "How many counties in NC?",
-    choiceA: "47",
-    choiceB: "67",
-    choiceC: "100",
-    choiceD: "39",
-    correctAnswer: "c"},
-  {
-    question: "Most populated county in NC?",
-    choiceA: "Anson",
-    choiceB: "Mecklenburg",
-    choiceC: "Wake",
-    choiceD: "Buncombe",
-    correctAnswer: "c"},
-   {
-    question: "Largest NC county by area?",
-    choiceA: "Davidson",
-    choiceB: "Sampson",
-    choiceC: "Dare",
-    choiceD: "Columbus",
-    correctAnswer: "c"},
-    {
-    question: "NC County with the highest elevation?",
-    choiceA: "Burke",
-    choiceB: "Yancey",
-    choiceC: "Mitchell",
-    choiceD: "Wilkes",
-    correctAnswer: "c"},
-    {
-    question: "Smallest NC county by area?",
-    choiceA: "Brunswick",
-    choiceB: "Carteret",
-    choiceC: "Hyde",
-    choiceD: "Mecklenburg",
-    correctAnswer: "c"},  
-    {
-    question: "City of Charlotte is in which NC county?",
-    choiceA: "Gaston",
-    choiceB: "Iredell",
-    choiceC: "Mecklenburg",
-    choiceD: "Union",
-    correctAnswer: "c"},
-    {
-    question: "Which NC county is the capital in?",
-    choiceA: "Durham",
-    choiceB: "Mecklenburg",
-    choiceC: "Wake",
-    choiceD: "Catawba",
-    correctAnswer: "c"},
-         
-    ];
+
 
 // Other variables
 var finalQuestionIndex = quizQuestions.length;

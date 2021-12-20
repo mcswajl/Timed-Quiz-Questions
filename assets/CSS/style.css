@@ -1,31 +1,32 @@
-:root{
-    background-color: rgb(246, 248, 250);
-    }
+/* :root{
+    background-color: rgb(134, 166, 197);
+    } */
     
-    li{
+    /* li{
         padding-bottom: 3px;
         color: white;
         text-shadow: 1.5px 1px 3px black;
         list-style-type: none;
     }
-    
-    p{
+     */
+    /* p{
         color: black;
         text-shadow: .5px .5px white;
         text-align: center;
         font-size: xx-large;
         font-family: sans-serif;
     
-    }
+    } */
     h2{
         font-family: sans-serif;
         margin-top: -.5rem;
         text-decoration: underline;
-        
     }
+        
+    /* }
     input{
         text-size-adjust: auto;
-    }
+    } */
     
     .container {
         width: 100vw;
@@ -72,12 +73,6 @@
     #quiz {
         display: none;
     }
-    
-        /* Use a media query to add a breakpoint at 800px: */
-        /*@media screen and (max-width: 800px) {
-        #highscore-header, h3 {
-         width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }*/
   
     #result {
         display: none;
@@ -156,8 +151,13 @@
     #endGameBtns{
         display: none;
     }
-    @media (min-width: 600px) {
-        p {
-            font-size: xx-large ;
+
+    
+        /* Use a media query to add a breakpoint at 800px: */
+            
+         @media only screen {(max-width: 800px)} {
+    
+        #highscore-header, h3 {
+         width: 100%; /*The width is 100%, when the viewport is 800px or smaller */
         }
     }
